@@ -1,5 +1,5 @@
 # Assignment Details
-Internet Of Things Quarter 2 Assignment Number 1
+Internet Of Things Quarter 2 Assignment Number 2
 
 Following is question  details
 
