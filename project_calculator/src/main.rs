@@ -1,7 +1,21 @@
 use std::io::{self, Write};
 fn main() {
-  loop{
+  print!("{}[2J", 27 as char);
+  println!("=== [ Calculator started. Start evaluating math operation ] ===");    
+
+loop{
     let input = input(">");
+    if input == "clear" {
+      print!("{}[2J", 27 as char);
+      println!("Terminal is clear now. Give me expression to evaluate.");    
+      print!("\r");
+      continue
+    }
+    if input == "exit" {
+      print!("{}[2J", 27 as char);
+      break
+    }
+
     match input.chars().next(){
       Some(x) => {
         // if input starts with 0 => exit kro
